@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oppskrift Lasagne</title>
+
+  <style>
+    body {
+      background-color: #fce4d6;
+      font-family: Arial, sans-serif;
+      color: #333333;
+      margin: 20px;
+    }
+    h2 {
+      color: #a83232;
+      border-bottom: 2px solid #a83232;
+      padding-bottom: 5px;
+    }
+    h4 {
+      color: #6b2b2b;
+      margin-top: 20px;
+    }
+    p {
+      line-height: 1.5;
+      font-size: 16px;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      width: 330px;
+      border-radius: 10px;
+      border: 2px solid #6b2b2b;
+    }
+
+    /* Popup */
+    #popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .popup-content {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      width: 320px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* Spinner */
+    .spinner {
+      border: 6px solid #eee;
+      border-top: 6px solid #a83232;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+
+  <script>
+    function bekreftVidere(link) {
+      const popup = document.getElementById("popup");
+      popup.style.display = "flex";
+
+      setTimeout(() => {
+        window.open(link, "_blank");
+        popup.style.display = "none";
+      }, 3500);
+    }
+  </script>
+</head>
+
+<body>
+  <h2>Oppskrift til lasagne!</h2>
+
+  <p>
+    <a href="#" onclick="bekreftVidere('https://www.matprat.no/oppskrifter/familien/lasagne/'); return false;">
+      Se full oppskrift her
+    </a>
+  </p>
+
+  <p>
+    9 stk. lasagneplater <br>
+    3 dl revet hvitost til toppen <br>
+  </p>
+
+  <h4>Kjøttsaus:</h4>
+  <p>
+    150 g bacon eller pancetta <br>
+    2 ss nøytral olje <br>
+    400 g kjøttdeig <br>
+    1 stk. finhakket løk <br>
+    1 stk. finhakket gulrot <br>
+    1 stilk finhakket stilkselleri (stangselleri) <br>
+    1 ss nøytral olje <br>
+    2 ss tomatpuré <br>
+    2 bokser hermetiske tomater (à 400 g) <br>
+    ca. 2 dl kjøttkraft, buljong eller vann <br>
+    2 ts tørket oregano <br>
+  </p>
+
+  <h4>Ostesaus:</h4>
+  <p>
+    3 ss smør <br>
+    3 ss hvetemel <br>
+    6 dl melk <br>
+    5 ss revet parmesan eller annen hvit ost <br>
+    1 ts salt <br>
+    0,5 ts kvernet pepper <br>
+    0,5 ts revet muskatnøtt <br>
+  </p>
+
+  <h1>Fremgangsmåte</h1>
+  <p>NB! Alt kommer fra Matprat, disse kommer ikke fra meg. Dette er bare en demo.</p>
+
+  <hr style="border: 1px solid #333; margin: 30px 0;">
+
+  <img src="https://images.matprat.no/g5zgd3slrg-normal/710/01_bacon.jpg" alt="Bacon stekes i panne">
+
+  <p>1. Skjær bacon i små biter. Ha olje i en varm panne og stek til det er gyllent. Ha i litt mer olje og brun kjøttdeig i olje på sterk varme i to omganger.</p>
+
+  <hr style="border: 1px solid #333; margin: 30px 0;">
+
+  <img src="https://images.matprat.no/ducn546b4p-normal/710/02_gronnsaker_panne.jpg" alt="Grønnsaker i panne">
+
+  <p>2. Senk varmen litt og ha i løk, gulrot og stilkselleri og la det steke til grønnsakene er blitt myke og blanke. Ha baconet og kjøttdeigen tilbake i stekepanna og bland alt sammen.
+</p>
+
+<hr style="border: 1px solid #333; margin: 30px 0;">
+
+<img src="https://images.matprat.no/8kjgrgyrva-normal/710/03_frese_tomatpure.jpg" alt="03_frese_tomatpure">
+
+<p>3. Lag en grop i midten av stekepannen. Ha i litt mer olje og fres tomat puréen i noen minutter. Ha i hermetisk tomat, kraft og krydder. La kjøttsausen småkoke i minst 10 minutter, til den begynner å tykne. Har du litt god tid? La gjerne sausen småkoke under lokk i ca. 1 ½ time, for å utvikle ekstra god smak. Husk å rør litt i kjelen underveis, slik at det ikke fester seg på bunnen av gryta. Smak til med salt og pepper.
+</p>
+
+<hr style="border: 1px solid #333; margin: 30px 0;">
+
+<img src="https://images.matprat.no/kcszrhttbx-normal/710/04_melk.jpg" alt="melk">
+
+<p>4. Smelt smør i en kjele og rør inn mel. Spe med melk under omrøring og la sausen koke i ca. 10 minutter. Den skal være forholdsvis tykk. Ha i parmesan og la osten smelte. Smak til ostesausen med krydder.</p>
+ 
+<hr style="border: 1px solid #333; margin: 30px 0;">
+
+<img src="https://images.matprat.no/42ly4t2llj-normal/710/05_saus.jpg" alt="saus">
+
+<p>5. Legg kjøttsaus, pastaplater og ostesaus lagvis i en ildfast form. Avslutt med pastaplater og ostesaus. Dryss over revet ost til slutt.</p>
+
+<hr style="border: 1px solid #333; margin: 30px 0;">
+
+<img src="https://images.matprat.no/6qqbgdmqq2-normal/710/06_parmesan.jpg" alt="parmesan">
+
+<p>6. Sett formen i stekeovn på 200° C og stek i 30-40 minutter. Kjenn etter med en pinne eller spiss kniv om pastaen er mør. La lasagnen hvile noen minutter før servering.
+</p>
+
+<hr style="border: 1px solid #333; margin: 30px 0;">
+
+<img src="https://images.matprat.no/hkafug7sl6-tinymce/710/07_lofte_stykke_form.jpg" alt="07_lofte_stykke_form">
+
+<p>Server gjerne med baguette og en grønn salat ved siden av.</p>
+
+<hr style="border: 1px solid #333; margin: 30px 0;">
+
+<img src="https://images.matprat.no/yrgbbkydc7-tinymce/710/februar_2023_106_2.jpg" alt="februar_2023_106_2">
+
+<p>Kos deg masse, tusen takk for at du tok en titt på mitt nettside</p>
+
+<hr style="border: 1px solid #333; margin: 30px 0;">
+
+
+<h1>Kos deg!</h1>
+  <p>  
+    Hilsen Mohammad Arkan
+  </p>
+
+  <footer>
+    <p>© Mohammad Arkan Osman – Alle rettigheter reservert. Oppskrift hentet fra  
+      <a href="#" onclick="bekreftVidere('https://www.matprat.no/oppskrifter/familien/lasagne/'); return false;">Matprat</a>.
+    </p>
+  </footer>
+
+  <div id="popup">
+    <div class="popup-content">
+      <div class="spinner"></div>
+      <h3>Du blir videresent til Matprat.no</h3>
+      <p>Bon appétit og lykke til med matlagingen!</p>
+    </div>
+  </div>
+
+</body>
+</html>
